@@ -1,0 +1,120 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/happy/.nvm/v0.11.10/bin/node',
+1 verbose cli   '/Users/happy/.nvm/v0.11.10/bin/npm',
+1 verbose cli   'publish' ]
+2 info using npm@1.3.22
+3 info using node@v0.11.10
+4 verbose publish [ '.' ]
+5 verbose cache add [ '.', null ]
+6 verbose cache add name=undefined spec="." args=[".",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: '.',
+7 verbose parsed url   path: '.',
+7 verbose parsed url   href: '.' }
+8 silly lockFile 3a52ce78- .
+9 verbose lock . /Users/happy/.npm/3a52ce78-.lock
+10 verbose tar pack [ '/var/folders/k1/_5snwpcn4h50298y6cb_zv9h0000gn/T/npm-34253-rQq8K3Fr/1389433751484-0.00944912969134748/tmp.tgz',
+10 verbose tar pack   '.' ]
+11 verbose tarball /var/folders/k1/_5snwpcn4h50298y6cb_zv9h0000gn/T/npm-34253-rQq8K3Fr/1389433751484-0.00944912969134748/tmp.tgz
+12 verbose folder .
+13 info prepublish noke@0.0.0
+14 silly lockFile 1f1177db-tar tar://.
+15 verbose lock tar://. /Users/happy/.npm/1f1177db-tar.lock
+16 silly lockFile 7568c40a-1484-0-00944912969134748-tmp-tgz tar:///var/folders/k1/_5snwpcn4h50298y6cb_zv9h0000gn/T/npm-34253-rQq8K3Fr/1389433751484-0.00944912969134748/tmp.tgz
+17 verbose lock tar:///var/folders/k1/_5snwpcn4h50298y6cb_zv9h0000gn/T/npm-34253-rQq8K3Fr/1389433751484-0.00944912969134748/tmp.tgz /Users/happy/.npm/7568c40a-1484-0-00944912969134748-tmp-tgz.lock
+18 silly lockFile 1f1177db-tar tar://.
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile 7568c40a-1484-0-00944912969134748-tmp-tgz tar:///var/folders/k1/_5snwpcn4h50298y6cb_zv9h0000gn/T/npm-34253-rQq8K3Fr/1389433751484-0.00944912969134748/tmp.tgz
+21 silly lockFile 7568c40a-1484-0-00944912969134748-tmp-tgz tar:///var/folders/k1/_5snwpcn4h50298y6cb_zv9h0000gn/T/npm-34253-rQq8K3Fr/1389433751484-0.00944912969134748/tmp.tgz
+22 verbose tar unpack /var/folders/k1/_5snwpcn4h50298y6cb_zv9h0000gn/T/npm-34253-rQq8K3Fr/1389433751484-0.00944912969134748/tmp.tgz
+23 silly lockFile fd4c8aef-1484-0-00944912969134748-package tar:///var/folders/k1/_5snwpcn4h50298y6cb_zv9h0000gn/T/npm-34253-rQq8K3Fr/1389433751484-0.00944912969134748/package
+24 verbose lock tar:///var/folders/k1/_5snwpcn4h50298y6cb_zv9h0000gn/T/npm-34253-rQq8K3Fr/1389433751484-0.00944912969134748/package /Users/happy/.npm/fd4c8aef-1484-0-00944912969134748-package.lock
+25 silly lockFile 7568c40a-1484-0-00944912969134748-tmp-tgz tar:///var/folders/k1/_5snwpcn4h50298y6cb_zv9h0000gn/T/npm-34253-rQq8K3Fr/1389433751484-0.00944912969134748/tmp.tgz
+26 verbose lock tar:///var/folders/k1/_5snwpcn4h50298y6cb_zv9h0000gn/T/npm-34253-rQq8K3Fr/1389433751484-0.00944912969134748/tmp.tgz /Users/happy/.npm/7568c40a-1484-0-00944912969134748-tmp-tgz.lock
+27 silly gunzTarPerm modes [ '755', '644' ]
+28 silly gunzTarPerm extractEntry package.json
+29 silly lockFile fd4c8aef-1484-0-00944912969134748-package tar:///var/folders/k1/_5snwpcn4h50298y6cb_zv9h0000gn/T/npm-34253-rQq8K3Fr/1389433751484-0.00944912969134748/package
+30 silly lockFile fd4c8aef-1484-0-00944912969134748-package tar:///var/folders/k1/_5snwpcn4h50298y6cb_zv9h0000gn/T/npm-34253-rQq8K3Fr/1389433751484-0.00944912969134748/package
+31 silly lockFile 7568c40a-1484-0-00944912969134748-tmp-tgz tar:///var/folders/k1/_5snwpcn4h50298y6cb_zv9h0000gn/T/npm-34253-rQq8K3Fr/1389433751484-0.00944912969134748/tmp.tgz
+32 silly lockFile 7568c40a-1484-0-00944912969134748-tmp-tgz tar:///var/folders/k1/_5snwpcn4h50298y6cb_zv9h0000gn/T/npm-34253-rQq8K3Fr/1389433751484-0.00944912969134748/tmp.tgz
+33 verbose tar pack [ '/Users/happy/.npm/noke/0.0.0/package.tgz',
+33 verbose tar pack   '/var/folders/k1/_5snwpcn4h50298y6cb_zv9h0000gn/T/npm-34253-rQq8K3Fr/1389433751484-0.00944912969134748/package' ]
+34 verbose tarball /Users/happy/.npm/noke/0.0.0/package.tgz
+35 verbose folder /var/folders/k1/_5snwpcn4h50298y6cb_zv9h0000gn/T/npm-34253-rQq8K3Fr/1389433751484-0.00944912969134748/package
+36 silly lockFile fd4c8aef-1484-0-00944912969134748-package tar:///var/folders/k1/_5snwpcn4h50298y6cb_zv9h0000gn/T/npm-34253-rQq8K3Fr/1389433751484-0.00944912969134748/package
+37 verbose lock tar:///var/folders/k1/_5snwpcn4h50298y6cb_zv9h0000gn/T/npm-34253-rQq8K3Fr/1389433751484-0.00944912969134748/package /Users/happy/.npm/fd4c8aef-1484-0-00944912969134748-package.lock
+38 silly lockFile 9c311153-happy-npm-noke-0-0-0-package-tgz tar:///Users/happy/.npm/noke/0.0.0/package.tgz
+39 verbose lock tar:///Users/happy/.npm/noke/0.0.0/package.tgz /Users/happy/.npm/9c311153-happy-npm-noke-0-0-0-package-tgz.lock
+40 silly lockFile fd4c8aef-1484-0-00944912969134748-package tar:///var/folders/k1/_5snwpcn4h50298y6cb_zv9h0000gn/T/npm-34253-rQq8K3Fr/1389433751484-0.00944912969134748/package
+41 silly lockFile fd4c8aef-1484-0-00944912969134748-package tar:///var/folders/k1/_5snwpcn4h50298y6cb_zv9h0000gn/T/npm-34253-rQq8K3Fr/1389433751484-0.00944912969134748/package
+42 silly lockFile 9c311153-happy-npm-noke-0-0-0-package-tgz tar:///Users/happy/.npm/noke/0.0.0/package.tgz
+43 silly lockFile 9c311153-happy-npm-noke-0-0-0-package-tgz tar:///Users/happy/.npm/noke/0.0.0/package.tgz
+44 silly lockFile 9ee17162-ers-happy-npm-noke-0-0-0-package /Users/happy/.npm/noke/0.0.0/package
+45 verbose lock /Users/happy/.npm/noke/0.0.0/package /Users/happy/.npm/9ee17162-ers-happy-npm-noke-0-0-0-package.lock
+46 silly lockFile 9ee17162-ers-happy-npm-noke-0-0-0-package /Users/happy/.npm/noke/0.0.0/package
+47 silly lockFile 9ee17162-ers-happy-npm-noke-0-0-0-package /Users/happy/.npm/noke/0.0.0/package
+48 verbose tar unpack /Users/happy/.npm/noke/0.0.0/package.tgz
+49 silly lockFile 11215123-ers-happy-npm-noke-0-0-0-package tar:///Users/happy/.npm/noke/0.0.0/package
+50 verbose lock tar:///Users/happy/.npm/noke/0.0.0/package /Users/happy/.npm/11215123-ers-happy-npm-noke-0-0-0-package.lock
+51 silly lockFile 9c311153-happy-npm-noke-0-0-0-package-tgz tar:///Users/happy/.npm/noke/0.0.0/package.tgz
+52 verbose lock tar:///Users/happy/.npm/noke/0.0.0/package.tgz /Users/happy/.npm/9c311153-happy-npm-noke-0-0-0-package-tgz.lock
+53 silly gunzTarPerm modes [ '755', '644' ]
+54 silly gunzTarPerm extractEntry package.json
+55 silly lockFile 11215123-ers-happy-npm-noke-0-0-0-package tar:///Users/happy/.npm/noke/0.0.0/package
+56 silly lockFile 11215123-ers-happy-npm-noke-0-0-0-package tar:///Users/happy/.npm/noke/0.0.0/package
+57 silly lockFile 9c311153-happy-npm-noke-0-0-0-package-tgz tar:///Users/happy/.npm/noke/0.0.0/package.tgz
+58 silly lockFile 9c311153-happy-npm-noke-0-0-0-package-tgz tar:///Users/happy/.npm/noke/0.0.0/package.tgz
+59 verbose chmod /Users/happy/.npm/noke/0.0.0/package.tgz 644
+60 verbose chown /Users/happy/.npm/noke/0.0.0/package.tgz [ 501, 20 ]
+61 silly lockFile 3a52ce78- .
+62 silly lockFile 3a52ce78- .
+63 silly publish { name: 'noke',
+63 silly publish   version: '0.0.0',
+63 silly publish   description: 'A Web Framework',
+63 silly publish   main: 'index.js',
+63 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+63 silly publish   repository: { type: 'git', url: 'git://github.com/xiuxian123/noke' },
+63 silly publish   keywords: [ 'web', 'framework' ],
+63 silly publish   author: { name: 'happy7259' },
+63 silly publish   license: 'ISC',
+63 silly publish   bugs: { url: 'https://github.com/xiuxian123/noke/issues' },
+63 silly publish   homepage: 'https://github.com/xiuxian123/noke',
+63 silly publish   readme: 'ERROR: No README data found!',
+63 silly publish   _id: 'noke@0.0.0',
+63 silly publish   dist: { shasum: '7a92377d1026421288d9cf24cba76a870efd9767' },
+63 silly publish   _from: '.' }
+64 verbose url raw noke
+65 verbose url resolving [ 'https://registry.npmjs.org/', './noke' ]
+66 verbose url resolved https://registry.npmjs.org/noke
+67 info trying registry request attempt 1 at 17:49:11
+68 http PUT https://registry.npmjs.org/noke
+69 http 409 https://registry.npmjs.org/noke
+70 verbose url raw noke
+71 verbose url resolving [ 'https://registry.npmjs.org/', './noke' ]
+72 verbose url resolved https://registry.npmjs.org/noke
+73 info trying registry request attempt 1 at 17:49:13
+74 http GET https://registry.npmjs.org/noke
+75 http 200 https://registry.npmjs.org/noke
+76 error publish fail Cannot publish over existing version.
+76 error publish fail Update the 'version' field in package.json and try again.
+76 error publish fail
+76 error publish fail If the previous version was published in error, see:
+76 error publish fail     npm help unpublish
+76 error publish fail
+76 error publish fail To automatically increment version numbers, see:
+76 error publish fail     npm help version
+77 error System Darwin 13.0.2
+78 error command "/Users/happy/.nvm/v0.11.10/bin/node" "/Users/happy/.nvm/v0.11.10/bin/npm" "publish"
+79 error cwd /Users/happy/Workspace/nodejs/noke
+80 error node -v v0.11.10
+81 error npm -v 1.3.22
+82 error code EPUBLISHCONFLICT
+83 verbose exit [ 1, true ]
