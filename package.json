@@ -6,6 +6,15 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "dependencies": {
+    "connect": "latest",
+    "cookie": "latest",
+    "mime": "latest",
+    "ejs": "latest"
+  },
+  "devDependencies": {
+    "mocha": "latest"
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/xiuxian123/noke"
@@ -19,5 +28,6 @@
   "bugs": {
     "url": "https://github.com/xiuxian123/noke/issues"
   },
-  "homepage": "https://github.com/xiuxian123/noke"
+  "homepage": "https://github.com/xiuxian123/noke",
+  "readmeFilename": "README.md"
 }

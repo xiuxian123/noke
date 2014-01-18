@@ -6,6 +6,31 @@
 
 ## MVC
 
++ app
+  + routes
+  + assets
+  + controllers
+  + views
+  + models
+  + helpers
+  + mails
+  + forms
+  + services
+  + utils
+  + errors
++ db
+ + migrations
++ test
++ config
++ doc
++ bin
++ public
++ log
++ tmp
+- server.js
+- package.json
+- .gitignore
+
 ## 便于学习
 
 ## 便于开发
