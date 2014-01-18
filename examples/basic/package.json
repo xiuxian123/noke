@@ -1,0 +1,14 @@
+{
+  "name": "noke-example-basic",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "connect": "latest",
+    "cookie": "latest",
+    "mime": "latest",
+    "ejs": "latest"
+  }
+}
