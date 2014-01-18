@@ -5,7 +5,7 @@
  */
 
 var program = require('../lib/extends/commander')
-  , mkdirp = require('mkdirp')
+  , mkdirp = require('../lib/extends/mkdirp')
   , pkg = require('../package.json')
   , version = pkg.version
   , os = require('os')
@@ -17,9 +17,7 @@ program
   .version(version)
   .usage('[options] [dir]')
   .option('-s, --sessions', 'add session support')
-  .option('-e, --ejs', 'add ejs engine support (defaults to jade)')
-  .option('-J, --jshtml', 'add jshtml engine support (defaults to jade)')
-  .option('-H, --hogan', 'add hogan.js engine support')
+  .option('-e, --ejs', 'add ejs engine support (defaults to ejs)')
   .option('-c, --css <engine>', 'add stylesheet <engine> support (less|stylus) (defaults to plain css)')
   .option('-f, --force', 'force on non-empty directory')
   .parse(process.argv);
@@ -34,10 +32,8 @@ var eol = os.EOL
 
 // Template engine
 
-program.template = 'jade';
-if (program.ejs) program.template = 'ejs';
-if (program.jshtml) program.template = 'jshtml';
-if (program.hogan) program.template = 'hjs';
+program.template = 'ejs';
+// if (program.jshtml) program.template = 'jshtml';
 
 /**
  * Routes index template.
@@ -70,32 +66,6 @@ var users = [
 ].join(eol);
 
 /**
- * Jade layout template.
- */
-
-var jadeLayout = [
-    'doctype 5'
-  , 'html'
-  , '  head'
-  , '    title= title'
-  , '    link(rel=\'stylesheet\', href=\'/stylesheets/style.css\')'
-  , '  body'
-  , '    block content'
-].join(eol);
-
-/**
- * Jade index template.
- */
-
-var jadeIndex = [
-    'extends layout'
-  , ''
-  , 'block content'
-  , '  h1= title'
-  , '  p Welcome to #{title}'
-].join(eol);
-
-/**
  * EJS index template.
  */
 
@@ -109,49 +79,6 @@ var ejsIndex = [
   , '  <body>'
   , '    <h1><%= title %></h1>'
   , '    <p>Welcome to <%= title %></p>'
-  , '  </body>'
-  , '</html>'
-].join(eol);
-
-/**
- * JSHTML layout template.
- */
-
-var jshtmlLayout = [
-    '<!DOCTYPE html>'
-  , '<html>'
-  , '  <head>'
-  , '    <title> @write(title) </title>'
-  , '    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />'
-  , '  </head>'
-  , '  <body>'
-  , '    @write(body)'
-  , '  </body>'
-  , '</html>'
-].join(eol);
-
-/**
- * JSHTML index template.
- */
-
-var jshtmlIndex = [
-    '<h1>@write(title)</h1>'
-  , '<p>Welcome to @write(title)</p>'
-].join(eol);
-
-/**
- * Hogan.js index template.
- */
-var hoganIndex = [
-    '<!DOCTYPE html>'
-  , '<html>'
-  , '  <head>'
-  , '    <title>{{ title }}</title>'
-  , '    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />'
-  , '  </head>'
-  , '  <body>'
-  , '    <h1>{{ title }}</h1>'
-  , '    <p>Welcome to {{ title }}</p>'
   , '  </body>'
   , '</html>'
 ].join(eol);
@@ -306,18 +233,6 @@ function createApplicationAt(path) {
         case 'ejs':
           write(path + '/views/index.ejs', ejsIndex);
           break;
-        case 'jade':
-          write(path + '/views/layout.jade', jadeLayout);
-          write(path + '/views/index.jade', jadeIndex);
-          break;
-        case 'jshtml':
-          write(path + '/views/layout.jshtml', jshtmlLayout);
-          write(path + '/views/index.jshtml', jshtmlIndex);
-          break;
-        case 'hjs':
-          write(path + '/views/index.hjs', hoganIndex);
-          break;
-
       }
     });
 
