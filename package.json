@@ -19,6 +19,10 @@
     "type": "git",
     "url": "git://github.com/xiuxian123/noke"
   },
+  "bin": {
+    "noke": "./bin/noke",
+    "_noke": "./bin/noke"
+  },
   "keywords": [
     "web",
     "framework"
@@ -27,6 +31,9 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/xiuxian123/noke/issues"
+  },
+  "engines": {
+    "node": ">= 0.8.0"
   },
   "homepage": "https://github.com/xiuxian123/noke",
   "readmeFilename": "README.md"

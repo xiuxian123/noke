@@ -208,29 +208,29 @@ var app = [
   , ' * Module dependencies.'
   , ' */'
   , ''
-  , 'var express = require(\'express\');'
+  , 'var noke = require(\'noke\');'
   , 'var routes = require(\'./routes\');'
   , 'var user = require(\'./routes/user\');'
   , 'var http = require(\'http\');'
   , 'var path = require(\'path\');'
   , ''
-  , 'var app = express();'
+  , 'var app = noke();'
   , ''
   , '// all environments'
-  , 'app.set(\'port\', process.env.PORT || 3000);'
+  , 'app.set(\'port\', process.env.PORT || 5210);'
   , 'app.set(\'views\', path.join(__dirname, \'views\'));'
   , 'app.set(\'view engine\', \':TEMPLATE\');'
-  , 'app.use(express.favicon());'
-  , 'app.use(express.logger(\'dev\'));'
-  , 'app.use(express.json());'
-  , 'app.use(express.urlencoded());'
-  , 'app.use(express.methodOverride());{sess}'
+  , 'app.use(noke.favicon());'
+  , 'app.use(noke.logger(\'dev\'));'
+  , 'app.use(noke.json());'
+  , 'app.use(noke.urlencoded());'
+  , 'app.use(noke.methodOverride());{sess}'
   , 'app.use(app.router);{css}'
-  , 'app.use(express.static(path.join(__dirname, \'public\')));'
+  , 'app.use(noke.static(path.join(__dirname, \'public\')));'
   , ''
   , '// development only'
   , 'if (\'development\' == app.get(\'env\')) {'
-  , '  app.use(express.errorHandler());'
+  , '  app.use(noke.errorHandler());'
   , '}'
   , ''
   , 'app.get(\'/\', routes.index);'
@@ -335,7 +335,7 @@ function createApplicationAt(path) {
 
     // Session support
     app = app.replace('{sess}', program.sessions
-      ? eol + 'app.use(express.cookieParser(\'your secret here\'));' + eol + 'app.use(express.session());'
+      ? eol + 'app.use(noke.cookieParser(\'your secret here\'));' + eol + 'app.use(noke.session());'
       : '');
 
     // Template support
@@ -348,7 +348,7 @@ function createApplicationAt(path) {
       , private: true
       , scripts: { start: 'node app.js' }
       , dependencies: {
-        express: version
+        noke: version
       }
     }
 
