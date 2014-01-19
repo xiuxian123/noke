@@ -30,7 +30,10 @@ if ('development' == app.get('env')) {
 
 routes.process(app);
 
-// console.log(app.routes);
+console.log(app._router.getURL('user', {userName: 'wangjinzhong', a: 'abc', age: 'hello'}));
+// console.log(app._router);
+
+console.log(app.routes);
 
 http.createServer(app).listen(app.get('port'), function() {
   console.log('Noke app listening on port ' + app.get('port') + ' env: ' + app.get('env'));
