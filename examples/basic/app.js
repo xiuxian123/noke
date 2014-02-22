@@ -30,8 +30,19 @@ if ('development' == app.get('env')) {
 
 routes.process(app);
 
-console.log(app._router.getURL('user', {userName: 'wangjinzhong', a: 'abc', age: 'hello'}));
-// console.log(app._router);
+console.log(app._router.generateURL(
+  'user',
+  {
+    userName: 'wangjinzhong:aaa', version: 'helloworld', a: 'abc', age: 'hello&dd', page: 20
+  }
+));
+
+console.log(app._router.generateURL(
+  'root',
+  {
+    userName: 'wangjinzhong:aaa', version: 'helloworld', a: 'abc', age: 'hello&dd', page: 20
+  }
+));
 
 console.log(app.routes);
 
